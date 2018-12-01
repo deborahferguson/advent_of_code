@@ -1,6 +1,6 @@
 import numpy as np
 
-filename = "input_data/dec1_1.txt"
+filename = "input_data/dec1_1_2.txt"
 
 changes = np.loadtxt(filename)
 
