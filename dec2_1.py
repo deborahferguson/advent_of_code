@@ -1,4 +1,4 @@
-filename = "input_data/dec2_1.txt"
+filename = "input_data/dec2.txt"
 
 #Set initial counts to 0
 twos = 0

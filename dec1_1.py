@@ -1,7 +1,7 @@
 import numpy as np
 
 #Load the data
-filename = "input_data/dec1_1_2.txt"
+filename = "input_data/dec1.txt"
 changes = np.loadtxt(filename)
 
 #Sum all the changes

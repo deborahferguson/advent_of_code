@@ -1,8 +1,9 @@
-import numpy as np
+from numpy import loadtxt
 
 #Load data
-filename = "input_data/dec1_1_2.txt"
-changes = np.loadtxt(filename)
+filename = "input_data/dec1.txt"
+#filename = "/home/debbie/Downloads/day1.txt"
+changes = loadtxt(filename)
 
 #Dict of all the sums
 sums = {}
