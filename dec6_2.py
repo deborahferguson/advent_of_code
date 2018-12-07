@@ -38,11 +38,12 @@ def closest_region():
     with a total distance to all coordinates that is less than 10000 """
     coordinates, x_range, y_range = read_data()
     count = 0
-    for i in range(x_range[1]-x_range[0]):
-        for j in range(y_range[1]-y_range[0]):
+    furthest_distance = int(10000/len(coordinates))
+    for i in range(x_range[1]-x_range[0]+2*furthest_distance):
+        for j in range(y_range[1]-y_range[0]+2*furthest_distance):
             tot_dist = 0
-            x_loc = i+x_range[0]
-            y_loc = j+y_range[0]
+            x_loc = i+x_range[0]-furthest_distance
+            y_loc = j+y_range[0]-furthest_distance
             for _, item in enumerate(coordinates):
                 distance = abs(item[0]-x_loc)+abs(item[1]-y_loc)
                 tot_dist += distance
