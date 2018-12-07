@@ -3,7 +3,8 @@
 def read_data():
     """This function read in the data and returns the coordinates,
     the x range and the y range"""
-    input_file = open("input_data/dec6.txt", 'r')
+    #input_file = open("input_data/dec6.txt", 'r')
+    input_file = open("../../Downloads/day6.txt", 'r')
     coordinates = []
     min_x = None
     max_x = None
