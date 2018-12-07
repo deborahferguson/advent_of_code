@@ -2,7 +2,6 @@
 lines = []
 
 #Read in the data
-#with open("../../Downloads/camDataDay4.txt") as f:
 with open("input_data/dec4.txt") as f:
     for line in f:
         line = line.strip()
@@ -51,17 +50,21 @@ for key,value in guards.items():
 #Create an array to represent the minutes. The value shows how many times the guard has been asleep during that minute
 asleep_minutes = [0]*60
 for nap in guards[max_guard][1]:
+    #print(nap)
     for i in range(nap[0],nap[1]):
         asleep_minutes[i]+=1
 
 #Find the minute he was asleep during most
 max_sleep_minute = 0
 max_sleep_times = 0
+#print(asleep_minutes)
 for i in range(len(asleep_minutes)):
     if(asleep_minutes[i]>max_sleep_times):
         max_sleep_times = asleep_minutes[i]
         max_sleep_minute = i
 
+#print("minute",max_sleep_minute)
+#print("guard",max_guard)
 print(max_guard*max_sleep_minute)
     
 

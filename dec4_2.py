@@ -2,7 +2,6 @@
 lines = []
 
 #Read in the data
-#with open("../../Downloads/camDataDay4.txt") as f:
 with open("input_data/dec4.txt") as f:
     for line in f:
         line = line.strip()
